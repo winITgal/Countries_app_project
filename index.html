@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Countries App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="title">Where in the World?</h2>
+            <button class="toggler"><i class="fas fa-moon"></i>Dark Mode</button>
+        </div>
+        <div class="body_part">
+            <div class="form">
+                <input type="text" placeholder="Search for a Country...">
+                <button class="btn"><i class="fas fa-search"></i></button>
+                <i class="fas fa-times hidden" id="close"></i>
+                <button id="back" class="hidden"><i class="fas fa-arrow-left"></i> Back</button>
+            </div>
+            <p class="results"></p>
+            <div class="region-filter">
+                <label for="regionSelect">Filter by Region:</label>
+                <select id="regionSelect">
+                    <option value="All">All</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            </div>
+            <div class="standard-display">
+                <div class="countries"></div>
+            </div>
+            <div class="stats">
+                <div class="image"></div>
+                <div class="info">
+                    <h3 class="country_title"></h3>
+                    <div class="infos">
+                        <div class="infos1">
+                            <p class="native_name"><span></span></p>
+                            <p class="population"><span></span></p>
+                            <p class="capital"><span></span></p>
+                            <p class="continent"><span></span></p>
+                        </div>
+                        <div class="infos2">
+                            <p class="region"><span></span></p>
+                            <p class="subregion"><span></span></p>
+                            <p class="domain"><span></span></p>
+                            <p class="currency"><span></span></p>
+                            <p class="languages"><span></span></p>
+                            <p class="borders"><span></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
